@@ -8,7 +8,10 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 vim.keymap.set('n', '<leader>e', ':Neotree<CR>', {})
 vim.keymap.set('n', '<leader>3', ':ToggleTerm<CR>', {})
 vim.keymap.set('n', '<leader>w', ':BD<CR>', {})
-vim.keymap.set('n', '<leader>fr', ':Prettier<CR>', {})
+vim.keymap.set('n', '<leader>fr', ':Neoformat<CR>', {})
+
+local dapui = require("dapui")
+vim.keymap.set('n', '<leader>du', dapui.toggle, {})
 
 local keyset = vim.keymap.set
 

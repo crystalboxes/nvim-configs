@@ -24,7 +24,7 @@ use {
     config = function() 
         require("neo-tree").setup({
             source_selector = {
-                winbar = true,
+                -- winbar = true,
                 statusline = false
             },
         filesystem = {
@@ -60,4 +60,12 @@ use {
 
   use 'LucHermitte/lh-vim-lib'
   use 'LucHermitte/lh-style'
+  use ({ 'projekt0n/github-nvim-theme' })
+  use 'hzchirs/vim-material'
+  use 'sbdchd/neoformat'
+
+  use 'mfussenegger/nvim-dap' 
+  use 'mfussenegger/nvim-dap-python'
+  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+
 end)
