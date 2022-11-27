@@ -197,6 +197,11 @@ _G.packer_plugins = {
     path = "/Users/snowbear/.local/share/nvim/site/pack/packer/start/vim-material",
     url = "https://github.com/hzchirs/vim-material"
   },
+  ["vim-parinfer"] = {
+    loaded = true,
+    path = "/Users/snowbear/.local/share/nvim/site/pack/packer/start/vim-parinfer",
+    url = "https://github.com/bhurlow/vim-parinfer"
+  },
   ["vim-sneak"] = {
     loaded = true,
     path = "/Users/snowbear/.local/share/nvim/site/pack/packer/start/vim-sneak",
@@ -211,10 +216,24 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/snowbear/.local/share/nvim/site/pack/packer/start/vim-unimpaired",
     url = "https://github.com/tpope/vim-unimpaired"
+  },
+  vlime = {
+    config = { "\27LJ\2\n\28\0\0\1\0\2\0\3'\0\0\0007\0\1\0K\0\1\0\brtp\tvim/\0" },
+    loaded = true,
+    path = "/Users/snowbear/.local/share/nvim/site/pack/packer/start/vlime",
+    url = "https://github.com/vlime/vlime"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: vlime
+time([[Config for vlime]], true)
+try_loadstring("\27LJ\2\n\28\0\0\1\0\2\0\3'\0\0\0007\0\1\0K\0\1\0\brtp\tvim/\0", "config", "vlime")
+time([[Config for vlime]], false)
+-- Config for: toggleterm.nvim
+time([[Config for toggleterm.nvim]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
+time([[Config for toggleterm.nvim]], false)
 -- Config for: gitsigns.nvim
 time([[Config for gitsigns.nvim]], true)
 try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
@@ -223,10 +242,6 @@ time([[Config for gitsigns.nvim]], false)
 time([[Config for neo-tree.nvim]], true)
 try_loadstring("\27LJ\2\n½\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\a\0005\4\6\0=\4\b\3=\3\t\2B\0\2\1K\0\1\0\15filesystem\19filtered_items\1\0\0\1\0\3\20hide_gitignored\2\18hide_dotfiles\1\fvisible\2\20source_selector\1\0\0\1\0\1\15statusline\1\nsetup\rneo-tree\frequire\0", "config", "neo-tree.nvim")
 time([[Config for neo-tree.nvim]], false)
--- Config for: toggleterm.nvim
-time([[Config for toggleterm.nvim]], true)
-try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
-time([[Config for toggleterm.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

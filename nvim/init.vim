@@ -31,7 +31,7 @@ autocmd vimenter * ++nested colorscheme gruvbox
 " autocmd vimenter * ++nested colorscheme github_light
 " autocmd vimenter * ++nested colorscheme vim-material
 set background=light   " Setting light mode
-" let g:gruvbox_contrast_light='hard'
+let g:gruvbox_contrast_light='hard'
 
 " vim-airline
 let g:airline_theme = 'gruvbox'
@@ -72,3 +72,9 @@ nnoremap <silent> <Leader>dr <Cmd>lua require'dap'.repl.open()<CR>
 nnoremap <silent> <Leader>dl <Cmd>lua require'dap'.run_last()<CR>
 
 lua require('dap-python').setup()
+
+
+" delimitMate
+let b:delimitMate_quotes = "\" `"
+let b:delimitMate_nesting_quotes = ['`']
+

@@ -39,7 +39,7 @@ use {
   }
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
-  use {'neoclide/coc.nvim', branch = 'release'}
+  use {'neoclide/coc.nvim', branch = 'release' }
 
   use 'morhetz/gruvbox'
   use 'hashivim/vim-terraform'
@@ -68,4 +68,11 @@ use {
   use 'mfussenegger/nvim-dap-python'
   use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
 
+  use { 
+      'vlime/vlime', 
+      config = function()
+         rtp = 'vim/'
+      end
+  }
+  use 'bhurlow/vim-parinfer'
 end)
