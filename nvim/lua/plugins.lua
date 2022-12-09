@@ -43,7 +43,7 @@ use {
 
   use 'morhetz/gruvbox'
   use 'hashivim/vim-terraform'
-  use 'Raimondi/delimitMate'
+  -- use 'Raimondi/delimitMate'
   use {"akinsho/toggleterm.nvim", tag = '*', config = function()
         require("toggleterm").setup()
     end}
@@ -74,5 +74,5 @@ use {
          rtp = 'vim/'
       end
   }
-  use 'bhurlow/vim-parinfer'
+  use 'eraserhd/parinfer-rust'
 end)

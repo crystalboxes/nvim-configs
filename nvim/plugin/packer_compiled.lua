@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/Users/snowbear/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
-  delimitMate = {
-    loaded = true,
-    path = "/Users/snowbear/.local/share/nvim/site/pack/packer/start/delimitMate",
-    url = "https://github.com/Raimondi/delimitMate"
-  },
   ["github-nvim-theme"] = {
     loaded = true,
     path = "/Users/snowbear/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
@@ -156,6 +151,11 @@ _G.packer_plugins = {
     path = "/Users/snowbear/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["parinfer-rust"] = {
+    loaded = true,
+    path = "/Users/snowbear/.local/share/nvim/site/pack/packer/start/parinfer-rust",
+    url = "https://github.com/eraserhd/parinfer-rust"
+  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/Users/snowbear/.local/share/nvim/site/pack/packer/start/plenary.nvim",
@@ -196,11 +196,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/snowbear/.local/share/nvim/site/pack/packer/start/vim-material",
     url = "https://github.com/hzchirs/vim-material"
-  },
-  ["vim-parinfer"] = {
-    loaded = true,
-    path = "/Users/snowbear/.local/share/nvim/site/pack/packer/start/vim-parinfer",
-    url = "https://github.com/bhurlow/vim-parinfer"
   },
   ["vim-sneak"] = {
     loaded = true,
