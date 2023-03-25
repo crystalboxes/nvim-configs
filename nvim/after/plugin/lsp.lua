@@ -41,6 +41,10 @@ lsp.on_attach(function(client, bufnr)
         if client.name == "pyright" then
             vim.cmd("silent! :w")
             vim.cmd("silent! !black %")
+        elseif client.name == "tsserver" then
+            vim.cmd("silent! :w")
+            vim.cmd("silent! !npx prettier % --write")
+            print("prettier format")
         else
             vim.lsp.buf.format()
         end
