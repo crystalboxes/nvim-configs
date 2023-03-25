@@ -12,10 +12,16 @@ return require('packer').startup(function(use)
         -- or                            , branch = '0.1.x',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
-    use { "sainnhe/sonokai", config = function()
-        vim.cmd [[colorscheme sonokai]]
-        -- vim.g.nord_contrast = true
+
+    use { "ellisonleao/gruvbox.nvim", config = function()
+        vim.o.background = "dark" -- or "light" for light mode
+        vim.cmd([[colorscheme gruvbox]])
     end }
+
+    -- use { "sainnhe/sonokai", config = function()
+    --     vim.cmd [[colorscheme sonokai]]
+    --     -- vim.g.nord_contrast = true
+    -- end }
     -- use { "shaunsingh/nord.nvim", config = function()
     --     vim.cmd [[colorscheme nord]]
     --     vim.g.nord_contrast = true
