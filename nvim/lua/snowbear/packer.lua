@@ -71,5 +71,14 @@ return require('packer').startup(function(use)
     }
 
     use "terrortylor/nvim-comment"
+
+    use {
+        'vlime/vlime',
+        config = function()
+            rtp = 'vim/'
+        end
+    }
+    use 'eraserhd/parinfer-rust'
+    
     require('nvim_comment').setup()
 end)
