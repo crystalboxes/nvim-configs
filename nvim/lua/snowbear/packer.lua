@@ -79,6 +79,7 @@ return require('packer').startup(function(use)
         end
     }
     use 'eraserhd/parinfer-rust'
+    use 'HiPhish/nvim-cmp-vlime'
     
     require('nvim_comment').setup()
 end)

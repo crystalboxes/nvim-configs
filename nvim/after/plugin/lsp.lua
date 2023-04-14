@@ -19,6 +19,12 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
     ['<C-Space>'] = cmp.mapping.complete(),
 })
 
+cmp.setup.filetype({ 'lisp' }, {
+    sources = {
+        { name = 'vlime' }
+    }
+})
+
 lsp.setup_nvim_cmp({
     mappings = cmp_mappings
 })
