@@ -15,17 +15,14 @@ return require('packer').startup(function(use)
 
     use { "ellisonleao/gruvbox.nvim", config = function()
         vim.o.background = "dark" -- or "light" for light mode
-        vim.cmd([[colorscheme gruvbox]])
+        -- vim.cmd([[colorscheme gruvbox]])
     end }
 
-    -- use { "sainnhe/sonokai", config = function()
-    --     vim.cmd [[colorscheme sonokai]]
-    --     -- vim.g.nord_contrast = true
-    -- end }
-    -- use { "shaunsingh/nord.nvim", config = function()
-    --     vim.cmd [[colorscheme nord]]
-    --     vim.g.nord_contrast = true
-    -- end }
+    use 'shaunsingh/nord.nvim'
+    use "sainnhe/sonokai"
+    use({ 'rose-pine/neovim', as = 'rose-pine' })
+    use 'navarasu/onedark.nvim'
+
     use { "akinsho/toggleterm.nvim", tag = '*', config = function()
         require("toggleterm").setup()
     end }
@@ -80,6 +77,9 @@ return require('packer').startup(function(use)
     }
     use 'eraserhd/parinfer-rust'
     use 'HiPhish/nvim-cmp-vlime'
-    
+
+    use 'xolox/vim-misc'
+    use 'crystalboxesprivate/vim-colorscheme-switcher'
+    use 'Taverius/vim-colorscheme-manager'
     require('nvim_comment').setup()
 end)
